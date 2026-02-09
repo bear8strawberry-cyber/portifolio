@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>✨ Projetos</h2>
+
+<div class="cards">
+    <div class="card">
+        <h3>Projeto 1 </h3>
+        <p>Jogo da memória;</p>
+        <p>Ganhei aprendizado em Python, Html, Css e a usar a biblioteca pygame;</p>
+
+    </div>
+
+    <div class="card">
+        <h3>Projeto 2 </h3>
+        <p>Pitch sobre VLC e Redes Quânticas;</p>
+        <p>Aprendi a discernir informações de forma rápida e eficaz por meio do pitch ;</p>
+    </div>
+
+    <div class="card lua">
+        <h3>Projeto 3 </h3>
+        <p>Jogos no Turtle</p>
+        <p>Formei gráficos de jogos de maneira prática com a biblioteca pygame e Turtle;</p>
+    </div>
+
+    <div class="card lua">
+        <h3>Projeto 4 </h3>
+        <p>diagramas em draw.io</p>
+        <p>Foi possível fazer conexões de redes e processos de banco de banco de dados;</p>
+        
+    </div>
+
+</div>
+
+
+
+
+<!-- Primeira imagem menor -->
+<img src="{{ url_for('static', filename='img/Captura de Tela (12).png') }}" 
+     class="draw-io img-pequena">
+
+<img src="{{ url_for('static', filename='img/jogo.gif') }}"
+     class="jogo">
+
+<img src="{{ url_for('static', filename='img/pitch.gif') }}"
+     class="pitch">
+
+<img src="{{ url_for('static', filename='img/Captura de Tela (14).png') }}"
+     class="turtle">
+
+{% endblock %}

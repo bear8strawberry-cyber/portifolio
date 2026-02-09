@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio | Sol & Lua</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    
+</head>
+<body>
+
+<header>
+    <h1>☀️ Sol & 🌙 Lua</h1>
+    <nav>
+        <a href="/">Início</a>
+        <a href="/projetos">Projetos</a>
+        <a href="/contato">Contato</a>
+    </nav>
+
+    <div class="theme-toggle" onclick="toggleTheme()">
+        🌞 / 🌙
+    </div>
+    
+    <canvas id="stars"></canvas>
+    
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>© 2026 • Larissa Ribeiro</p>
+</footer>
+
+
+</body>
+</html>
