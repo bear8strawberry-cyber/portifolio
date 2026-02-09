@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <img src="{{ url_for('static', filename='img/sol.png') }}" class="icon sol">
+    <h2>Desenvolvedora Criativa</h2>
+    <p>Equilíbrio entre lógica e imaginação.</p>
+    <p>
+    Gosto de 
+    criar coisas novas, criativas e acima de tudo úteis. 
+ .</p>
+
+ <div class="caixa-decorativa">
+  <h2>Apresentação</h2>
+  <p>Olá, meu nome é  Larissa de Jesus Ribeiro. Trabalho na área da Informática, bem vindo ao meu postifólio!</p>
+   <p>Gosto de usar minha criatividade na tecnologia; tenho conhecimento em Python, Flask, Html e Css! Se quizer visite meus projetos, é só clicar na estrela.</p>
+</div>
+
+    <img src="{{ url_for('static', filename='img/lua.avif') }}" class="icon lua">
+
+    <div class="star-arrow" id="star">
+        ⭐
+    </div>
+    
+    <div id="constellation" class="hidden">
+        ✦ ✧ ✶ ✷ ✸
+    </div>
+    
+</section>
+{% endblock %}
